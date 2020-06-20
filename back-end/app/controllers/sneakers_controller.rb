@@ -5,6 +5,7 @@ class SneakersController < ApplicationController
   # GET /sneakers.json
   def index
     @sneakers = Sneaker.all
+    render json: @sneakers
   end
 
   # GET /sneakers/1
